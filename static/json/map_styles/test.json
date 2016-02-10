@@ -1,0 +1,22 @@
+[
+  {
+    "stylers": [
+      { "saturation": -20 },
+      { "hue": "#00ffe6" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "simplified",
+        "lightness": 100}
+    ]
+  }
+]
