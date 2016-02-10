@@ -1,14 +1,14 @@
 [
   {
-    "stylers": [
-      { "saturation": -20 },
-      { "hue": "#00ffe6" }
-    ]
-  },{
-    "featureType": "road",
     "elementType": "labels",
     "stylers": [
       { "visibility": "off" }
+    ]
+  },
+  {
+    "stylers": [
+      { "saturation": -20 },
+      { "hue": "#00ffe6" }
     ]
   },
   {
