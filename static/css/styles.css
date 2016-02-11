@@ -1,0 +1,42 @@
+#map-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */;
+}
+
+#map, #map-wrap {
+    position: absolute;
+    top: 1.8em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    padding-top: 10px;
+}
+
+#nav > a {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  background: #339e0f;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 1em;
+}
+
+#nav > a:hover{
+  background: #0a702a;
+  text-decoration: none;
+}
+
+#nav > a.active {
+  background: #2a0e7d;
+}
+
+#nav > a.active:hover{
+  background: #5a29c2;
+}

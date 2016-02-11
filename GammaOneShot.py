@@ -20,7 +20,7 @@ def get_styles(map_name):
     json_url = os.path.join(root, "static/json/map_styles", map_name + '.json')
     with open(json_url, 'r') as json_file:
         styles = json_file.read()
-    return render_template('pages/map.html', styles=styles)
+    return render_template('pages/map.html', styles=styles, active=map_name)
 
 if __name__ == '__main__':
     app.run(debug=True)

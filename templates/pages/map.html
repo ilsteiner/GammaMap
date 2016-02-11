@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Map</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/styles.css">
     <script>
         var styles = {{ styles|safe }};
     </script>
 </head>
 <body>
-<div id="wrapper" style="height:1000px;width:1000px;">
-    <div id="map" style="height:1000px;width:1000px;">
+<div id="nav">
+    <a {% if active == 'test' %} class="active" {% endif %} href="/show_map/test">Test</a>
+    <a {% if active == 'player' %} class="active" {% endif %} href="/show_map/player">Player</a>
+    <a {% if active == 'GM' %} class="active" {% endif %} href="/show_map/GM">GM</a>
+</div>
+<div id="map-wrap">
+
+    <div id="map" class="col-md-12">
 
     </div>
 </div>
 
+{# JavaScript #}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 {#<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDum_omIdovKrIWK-slGy1CPnMNpJopDWA&signed_in=true"></script>#}
 <script src="/static/js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDum_omIdovKrIWK-slGy1CPnMNpJopDWA&signed_in=true&callback=initMap"></script>
+
 </body>
 </html>
