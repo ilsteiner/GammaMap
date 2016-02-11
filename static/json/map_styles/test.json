@@ -6,17 +6,19 @@
     ]
   },
   {
+    "featureType": "all",
+    "elementType": "geometry",
     "stylers": [
-      { "saturation": -20 },
-      { "hue": "#00ffe6" }
+      {
+        "color": "#ecdcc3"
+      }
     ]
   },
   {
     "featureType": "road",
     "elementType": "geometry",
     "stylers": [
-      { "visibility": "simplified",
-        "lightness": 100}
+      { "visibility": "simplified"}
     ]
   }
 ]
