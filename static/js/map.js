@@ -11,9 +11,18 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
+    var url = "";
+
+    if(active == 'player') {
+        url = 'https://a.uguu.se/kjdrmn_PlayerLocations%282%29.kmz';
+    }
+    else if(active == 'GM') {
+        url = 'https://a.uguu.se/gdookc_GMmap.kmz';
+    }
+
     var ctaLayer = new google.maps.KmlLayer({
         //url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
-        url: 'https://drive.google.com/file/d/0B99r3d3UJK4vWDVfRi1EaXQ0U2M/view?usp=sharing',
+        url: url,
         map: map
     });
 

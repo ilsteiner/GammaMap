@@ -17,7 +17,8 @@ def show_player_map():
 @app.route('/show_map/<map_name>', methods=['GET'])
 def get_styles(map_name):
     root = os.path.realpath(os.path.dirname(__file__))
-    json_url = os.path.join(root, "static/json/map_styles", map_name + '.json')
+    # json_url = os.path.join(root, "static/json/map_styles", map_name + '.json')
+    json_url = os.path.join(root, "static/json/map_styles", 'test.json')
     with open(json_url, 'r') as json_file:
         styles = json_file.read()
     return render_template('pages/map.html', styles=styles, active=map_name)
